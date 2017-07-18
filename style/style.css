@@ -1,0 +1,566 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+div.window{
+	display:none;
+	position: fixed;
+}
+div.images-view{
+	width: 80vw;
+	height: 80vh;
+	background-color: #eee;
+	margin-top:100px;
+	z-index:100;
+	background-size:100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+div.images-view-part{
+	float:left;
+	height:100%;
+}
+div.img-view-space{
+	width:80%;
+}
+div.img-view-prev, div.img-view-next{
+	width:10%;
+	transition: 0.3s ease;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:80%;
+}
+div.img-view-prev:hover{
+	background-image: url("images/ico/prev.png");
+	cursor:pointer;
+}
+div.img-view-next:hover{
+	background-image: url("images/ico/next.png");
+	cursor:pointer;
+}
+div.close-viewer{
+	height:5%;
+	width:5%;
+	margin-left:114%;
+	background-image: url("images/ico/cross-out.png");
+	background-position:center;
+	background-repeat: no-repeat;;
+	background-size: 60%;
+	cursor:pointer;
+}
+div.screen-block{
+	background-color: #eee;
+	height:100vh;
+}
+div#home{
+	background-image: url("images/background.jpg");
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 415px;
+}
+div.header{
+	overflow: auto;
+	position: fixed;
+	width:100%;
+}
+ul li a{
+	color:inherit;
+	text-decoration: inherit;
+}
+ul.list-link{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	float:right;
+}
+ul.list-link li{
+	float:right;
+	padding: 20px 40px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.1em;
+	transition: 0.3s ease;
+}
+ul.list-link li:hover{
+	background:#131313;
+	cursor:pointer;
+	color:#eee;
+}
+div.logo{
+	font-size: 6em;
+	position: relative;
+	top: 35%;
+}
+div.center-logo{
+	height:120px;
+	margin:0 auto;
+	width:26%;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-family:  Helvetica, Arial, sans-serif;
+	text-shadow: 0 0 2px rgba(255,255,255,0.3);
+	color:#131313;
+}
+div.border-logo{
+	height:3%;
+	width:100%;
+	background:#131313;
+	box-shadow: 0px 0px 2px 1px rgba(255,255,255,0.2);
+}
+div.logotype{
+	height:94%;
+}
+
+
+div.link-down{
+	position: absolute;
+	height:100px;
+	width:20%;
+	margin:0 auto;
+	left:40%;
+	bottom:40px;
+	/* font-family: Helvetica, Arial, sans-serif; */
+	font-family: ScriptS;
+	font-size:1.4em;
+	font-weight: bold;
+}
+div.down-part{
+	height:50%;
+}
+div.down-text{
+	text-align:center;
+	font-size:1.5em;
+}
+div.down-text div.in-down{
+	padding:10px;
+}
+div.center-down-ico{
+	width:25%;
+	height:80%;
+	margin:0 auto;
+	background-image: url("images/ico/down.png");
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: center;
+	transition: 0.2s ease;
+}
+div.down-text div.in-down:hover, div.center-down-ico:hover{
+	cursor:pointer;
+}
+div.center-down-ico:hover{
+	height:100%;
+}
+
+
+div#about-us{
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #131313;
+	height:520px;
+	background-image: url("images/textura.jpg");
+	background-size: 120%;
+	box-shadow: inset 30px 0 60px 0 rgba(0, 0, 0, 0.7),
+				inset 0 10px 40px 0 rgba(0, 0, 0, 0.7),
+				inset -30px 0 60px 0 rgba(0, 0, 0, 0.7);
+}
+div.header-about h2{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	padding-top: 40px;
+	font-size: 2.0em;
+	color: #eee;
+}
+div.three-block{
+	width:80%;
+	margin: 80px auto;
+}
+table.table-three{
+	width:100%;
+}
+table.table-three td{
+	width:33.3%;
+	vertical-align: top;
+}
+div.three-head h3{
+	text-align: center;
+	color:#eee;
+}
+div.three-head{
+	width:100%;
+}
+div.three-desc{
+	text-align: center;
+	color:#eee;
+	padding:20px 10px;
+}
+
+div#gallery{
+	background:#090909;
+}
+div.gallery{
+	height:100%;
+}
+div.gallery div.part-gallery.head{
+	height:15%;
+	min-height:120px;
+}
+div.gallery div.part-gallery.images{
+	height:85%;
+}
+div.part-header.head-top{
+	height:70%;
+}
+div.part-header.head-down{
+	height:30%;
+}
+div.head-desc{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 2.2em;
+	text-align:center;
+	color:#eee;
+}
+div#gallery{
+	height: 1024px;
+}
+div.block-gallery{
+	width:10%;
+	background:#030303;
+}
+div.gallery-content{
+	width:80%;
+}
+div.gallery-part{
+	height:100%;
+	float: left;
+}
+div.gallery-content div.img-box{
+	width: 25%;
+	height: 25%;
+	background: #eee;
+	float:left;
+	box-shadow: inset 4px 5px 15px 1px rgba(0,0,0,0.3);
+	background-size:115%;
+	background-position:center;
+	cursor: pointer ;
+	transition: 1.4s ease;
+}
+div.gallery-content div.img-box:hover{
+	background-size:130%;
+}
+
+/* Contacts */
+
+div#contacts{
+	border-top: 2px solid #131313;
+	background-image: url("images/background_dark_2.blur.jpg");
+	background-size:100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: Helvetica, Arial, sans-serif;
+	color:#eee;
+}
+.field-contact{
+	width:80%;
+	margin:50px auto;
+	border:none;
+	border-top:2px solid #333;
+	color:#333;
+}
+.field-contact legend{
+	text-align: center;
+}
+.field-contact legend h2{
+	padding:2px 20px;
+	font-size:2.1em;
+}
+div.send-top{
+	height:60px;
+}
+div.send-center{
+	height:200px;
+}
+div.send-down{
+	height:60px;
+}
+div.mini-box{
+	padding:5px;
+}
+div.send-part{
+	width:50%;
+	height:100%;
+	float:left;
+}
+div.send-part input.input-info{
+	height:30px;
+	padding:4px 5px;
+}
+.input-info{
+	border:1px solid #050505;
+	background: #151515;
+	display: block;
+	margin:0 auto;
+	width: 90%;
+	color: #777;
+}
+textarea.input-info{
+	width: 95%;
+}
+input.send-button{
+	width:95%;
+	display:block;
+	margin:0 auto;
+	padding:6px;
+	font-size:1.1em;
+	background:transparent;
+	border: 2px solid #151515;
+	color:#151515;
+	transition: 0.2s ease;
+}
+input.send-button:hover{
+	cursor:pointer;
+	color:#eee;
+	border:2px solid #eee;
+}
+div.block-contact{
+	color:#090909;
+	padding: 10px 40px;
+}
+div.block-contact h2{
+	padding:0 100px;
+	font-size: 2.0em;
+	font-weight: normal;
+}
+table.table-contact{
+	border:2px solid #090909;
+	border-collapse: collapse;
+}
+table.table-contact td{
+	padding: 10px 35px;
+	border:2px solid #090909;
+	font-size: 1.1em;
+	text-shadow: 1px -1px 0px rgba(255, 255, 255, 0.1);
+	font-weight: bold;
+}
+table.table-contact td:last-child{
+	padding: 10px 80px;
+}
+table.table-contact tr{
+	transition: ease 0.2s;
+}
+table.table-contact tr:hover{
+	color:#eee;
+}
+div.desc-about-us{
+	width: 60%;
+	margin: 20px auto;
+	text-align: center;
+	color:#c5c5c5;
+}
+
+div.viewer{
+	position: fixed;
+	width:100%;
+	height:800px;
+	top:8%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.8);
+}
+div.prev-images, div.next-images, div.now-images{
+	height: 100%;
+	float:left;
+}
+
+div.now-images{
+	width:70%;
+}
+div.prev-images, div.next-images{
+	width:15%;
+}
+div.image-center{
+	width: 90%;
+	height: 90%;
+	margin: 4% auto;
+	background-color: #131313;
+	background-size: 115%;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: ease 0.3s;
+}
+
+div.container{
+	height: 80%;
+	width: 100%;
+	margin: 40% auto;
+	perspective: 300px;
+}
+div.prev-image, div.next-image{
+	position: absolute;
+	height: 80%;
+	margin-top: 20%;
+	width: 100%;
+	background-color: #131313;
+	background-size: 360%;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: ease 0.3s;
+}
+div.prev-image{
+	transform: rotateY(-45deg);
+}
+div.next-image{
+	transform: rotateY(45deg);
+}
+div.prev-image:hover{
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.5);`
+}
+div#cross{
+	position: absolute;
+	right:19%;
+	width: 45px;
+	height: 45px;
+	background-image: url("images/ico/cross.png");
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+div.inimg{
+	width: 100%;
+	height: 100%;
+	transition: ease 0.2s;
+}
+div.inimg:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+	cursor:pointer;
+}
+div#footer{
+	border-top: 1px solid #090909;
+	background: #131313;
+	color:#eee;
+	background: linear-gradient(to top, #121212, #0A0A0A);
+}
+div.infoot{
+	padding:40px 0px;
+}
+div.copyright{
+	font-family: sans-serif;
+	font-style: italic;
+	text-align: center;
+}
+
+div#contacts{
+	background-image: url("../images/lounge_4.jpg");
+	height: 580px;
+}
+div#contacts div.title{
+	color: #131313;
+	width:35%;
+	margin: 10px 30px;
+	font-size: 1.6em;
+	text-align: left;
+	text-shadow: 1px -1px 1px rgba(210, 210, 210, 0.1);
+}
+div#contacts div.title h3{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+div#contacts span.title-line{
+	padding:2px 20px;
+}
+div.underline{
+	height: 2px;
+	background: #131313;
+/*	background: linear-gradient(to left, transparent, #131313, #131313, transparent);*/
+}
+div.block-connect{
+	height: 90%;
+}
+div.connect{
+	float:left;
+	height: 100%;
+}
+div.contacts-part{
+	width: 40%;
+	font-size: 1.2em;
+	color:#131313;
+}
+div.email-part{
+	width: 60%;
+}
+div.content-contacts{
+	width: 80%;
+	padding:20px;
+	margin:0 auto;
+	margin-top:50px;
+	background: rgba(255, 255, 255, 0.8);
+}
+div.contact-box{
+	font-size: 1.2em;
+	border-bottom: 2px solid #131313;
+}
+table.table-contacts{
+	margin-top: 10px;
+	font-size: 0.9em;
+}
+table.table-email{
+	width: 96%;
+	margin: 10px auto;
+	height: 80%;
+/*	border:1px solid #000;*/
+	border-collapse: collapse;
+}
+table.table-email td{
+	background: rgba(255, 255, 255, 0.8);
+	border:2px solid #131313;
+/*	border:1px solid #000;*/
+}
+table.table-email tr.line-row{
+	height: 20%;
+}
+div.enter-box{
+	text-align: center;
+}
+div.enter-box input{
+	padding: 5px 0px;
+	width: 80%;
+}
+textarea.enter-field{
+	width: 90%;
+}
+.enter-style{
+	border:none;
+	border:2px solid #252525;
+	border-radius: 5px;
+	background: transparent;
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+	color:#131313;
+}
+div.enter-button{
+	text-align: center;
+}
+input.button-send{
+	width: 90%;
+	text-align: center;
+	padding: 2px 0px;
+	border-radius: 5px;
+	border:1px solid #131313;
+	font-size: 1.1em;
+	background: transparent;
+	color:#232323;
+	transition: ease 0.3s;
+}
+input.button-send:hover{
+	color:lime;
+	border:1px solid lime;
+	cursor:pointer;
+}
+form#form-send{
+	height: 100%;
+}

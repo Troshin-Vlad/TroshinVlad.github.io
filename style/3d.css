@@ -1,0 +1,19 @@
+div{
+	height: 300px;
+	width: 250px;
+}
+.container{
+	height: 360px;
+	margin: 300px auto 1em;
+	perspective: 800px;
+	border:1px solid red;
+}
+.top, .bottom{
+	position: absolute;
+	bottom: 0;
+	transform: rotateY(70deg);
+	border-radius: 2px;	
+}
+.top{
+	background: rgba(255, 230, 0, 0.7);
+}
